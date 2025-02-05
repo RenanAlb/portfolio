@@ -1,4 +1,4 @@
-const url = "http://localhost:8080";
+const url = "https://renan-albuquerque.onrender.com";
 
 export const novoProjeto = async (data) => {
   try {
