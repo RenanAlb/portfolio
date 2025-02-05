@@ -51,6 +51,11 @@ const About = () => {
       </div>
       <div className="text">
         <p>
+          Ola, sou Renan Albuquerque, tenho 17 anos e sou apaixonado pelo mundo
+          do desenvolvimento web. Estudo na Escola Técnica ETEC Eudécio Luiz
+          Vicente em Adamantina SP com o curso em Informática para internet.
+        </p>
+        <p>
           Criar websites é minha paixão e meu maior prazer. Por isso, dedico-me
           a aprender cada vez mais com uma vontade insaciável de criar projetos
           e experiências em código.
