@@ -5,6 +5,7 @@ import connectToDataBase from "./database/mongodb.js";
 import validarAcesso from "./routes/validar-acesso.js";
 import projetos from "./routes/projetos.js";
 import path from "path";
+import { fileURLToPath } from "url";
 
 // Dotenv config.
 dotenv.config();
@@ -28,6 +29,9 @@ app.use(express.json());
 // Use routes
 app.use("/acesso", validarAcesso);
 app.use("/projetos", projetos);
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 app.get("*", (req, res) => {
