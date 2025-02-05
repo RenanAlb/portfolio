@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('./assets/fonts/neue-haas-unica/NeueHaasUnica-Regular.woff2') format('woff2'),
+        url('./assets/fonts/neue-haas-unica/NeueHaasUnica-Bold.woff2') format('woff2'),
+        url('./assets/fonts/neue-haas-unica/NeueHaasUnica-ExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/neue-haas-unica/NeueHaasUnica-Black.woff2') format('woff2'),
+        url('./assets/fonts/neue-haas-unica/NeueHaasUnica-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Neue Haas Unica', sans-serif;
+  overflow-x: hidden;
+}
