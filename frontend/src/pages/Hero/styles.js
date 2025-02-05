@@ -40,6 +40,7 @@ export const Main = styled.main`
     background-color: transparent;
     border: none;
     color: ${Themes.gray};
+    margin-top: 10px;
 
     &:hover {
       cursor: pointer;
@@ -97,6 +98,12 @@ export const Main = styled.main`
       font-size: 2.2em;
       line-height: 1.35em;
       mix-blend-mode: difference;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .projetos h1 {
+      font-size: 2em;
     }
   }
 `;

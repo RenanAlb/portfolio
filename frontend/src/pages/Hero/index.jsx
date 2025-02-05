@@ -15,6 +15,7 @@ import { getRecentProjects } from "../../utils/projeto";
 import RenderProjetos from "../../components/RenderProjetos";
 import Footer from "../../components/Footer";
 import { ThemeContext } from "../../context/ThemeContext";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [projetos, setProjetos] = useState([]);
@@ -24,6 +25,8 @@ const Hero = () => {
   const littleTextRef = useRef(null);
 
   const { theme } = useContext(ThemeContext);
+
+  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     const animationToPresentationRef = gsap.to(presentationRef.current, {
@@ -78,7 +81,7 @@ const Hero = () => {
               Olá! Sou Renan Albuquerque, um desenvolvedor web apaixonado por
               transformar ideias em código.
             </h1>
-            <p>Ler mais sobre mim</p>
+            <p onClick={() => navigate("/about")}>Ler mais sobre mim</p>
           </section>
           <section ref={littleTextRef} className="little-text">
             <p>

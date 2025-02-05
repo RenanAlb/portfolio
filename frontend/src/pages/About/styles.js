@@ -21,7 +21,6 @@ export const Container = styled.div`
   }
   .header h1 {
     width: 80%;
-    min-width: 520px;
     font-size: 4.5em;
     font-weight: 400;
     color: ${(props) => (props.theme === "light" ? "black" : "white")};
@@ -32,7 +31,6 @@ export const Container = styled.div`
   .text,
   .tecnologias {
     width: 70%;
-    min-width: 520px;
     margin: 150px auto 0 auto;
     padding: 10px;
   }

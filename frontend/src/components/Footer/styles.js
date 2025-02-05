@@ -55,10 +55,11 @@ export const FooterContainer = styled.footer`
   .links p {
     color: gray;
     margin-bottom: 15px;
+    margin-top: 10px;
   }
   .links ul li {
     display: inline-flexbox;
-    margin: 5px 0;
+    margin: 10px 0;
     border-bottom: 1px solid transparent;
 
     &:hover {
@@ -75,7 +76,7 @@ export const FooterContainer = styled.footer`
 
   @media screen and (max-width: 800px) {
     .message h1 {
-      font-size: 1.2em;
+      font-size: 1.9em;
     }
   }
   @media screen and (max-width: 600px) {
@@ -83,6 +84,10 @@ export const FooterContainer = styled.footer`
     align-items: start;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+
+    .message h1 {
+      font-size: 1.7em;
+    }
 
     .message {
       width: 100%;

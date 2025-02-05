@@ -31,7 +31,6 @@ export const Main = styled.main`
     left: 0;
   }
   .image img {
-    min-width: 500px;
     width: 60%;
     max-width: 700px;
     position: fixed;
@@ -182,6 +181,7 @@ export const Main = styled.main`
     }
     .header-about-project .termino-header-about-project p {
       font-size: 1em;
+      margin-bottom: 15px;
     }
     .header-about-project .termino-header-about-project h1 {
       font-size: 1.5em;
@@ -192,9 +192,11 @@ export const Main = styled.main`
     }
     .header-about-project .tecnologias-header-about-project p {
       font-size: 1em;
+      margin-bottom: 15px;
     }
     .header-about-project .tecnologias-header-about-project h1 {
       font-size: 1.5em;
+      line-height: 1.5em;
     }
 
     .header-about-project .images {

@@ -45,7 +45,7 @@ export const ContainerMenuMobile = styled.div`
     font-size: 2.5em;
     border-bottom: 1px solid transparent;
     transition: 0.2s;
-    margin: 9px 0;
+    margin: 12px 0;
     &:hover {
       border-bottom: 1px solid
         ${(props) =>
