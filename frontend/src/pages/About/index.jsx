@@ -1,7 +1,13 @@
 import { Container } from "./styles";
 import Menu from "../../components/Menu";
 import Mouse from "../../components/Mouse";
-import { useContext, useEffect, useRef, useState } from "react";
+import {
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import gsap from "gsap";
 import AnimationWebsiteAbout from "./AnimationWebsiteAbout";
@@ -15,6 +21,10 @@ const About = () => {
   const menuRef = useRef(null);
   const ulRef = useRef(null);
   const [valueMouse, setValueMouse] = useState(null);
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     const animationToMenuRef = gsap.to(menuRef.current, {
