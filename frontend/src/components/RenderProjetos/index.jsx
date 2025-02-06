@@ -96,7 +96,7 @@ const RenderProjetos = ({ theme, onSetValueMouse, projetos }) => {
 
   return (
     <ContainerProjetos theme={theme} ref={containerProjetoRef} tela={tela}>
-      {projetos.lenght > 0 ? (
+      {projetos.length > 0 ? (
         projetos.map((projeto, index) => (
           <div
             onMouseEnter={() => houverProject(projeto)}
