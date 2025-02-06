@@ -77,7 +77,13 @@ export const Main = styled.main`
       props.theme === "light" ? Themes.black : Themes.white};
   }
 
-  .projetos button {
+  .projetos .container-button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .projetos .container-button button {
     background-color: transparent;
     color: ${(props) => (props.theme === "light" ? "black" : "white")};
     padding: 15px 25px;

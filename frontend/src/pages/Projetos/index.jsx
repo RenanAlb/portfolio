@@ -21,6 +21,10 @@ const Projetos = () => {
   const [projetos, setProjetos] = useState([]);
   const [valueMouse, setValueMouse] = useState(null);
 
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   useEffect(() => {
     (async () => {
       try {

@@ -1,6 +1,12 @@
 import { Container, Main } from "./styles";
 import { getProjectByName } from "../../utils/projeto";
-import { useEffect, useContext, useRef, useState } from "react";
+import {
+  useEffect,
+  useContext,
+  useRef,
+  useState,
+  useLayoutEffect,
+} from "react";
 import { useParams } from "react-router-dom";
 import { ThemeContext } from "../../context/ThemeContext";
 import Mouse from "../../components/Mouse";
@@ -20,6 +26,10 @@ const RenderProject = () => {
   const menuRef = useRef(null);
   const headerAboutProjectRef = useRef(null);
   const mainRef = useRef(null);
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     const fetchGetProjectByName = async () => {

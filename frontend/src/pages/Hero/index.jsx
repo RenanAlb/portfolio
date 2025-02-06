@@ -29,6 +29,8 @@ const Hero = () => {
   const navigate = useNavigate();
 
   useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     const animationToPresentationRef = gsap.to(presentationRef.current, {
       opacity: 1,
       duration: 1,
@@ -99,7 +101,9 @@ const Hero = () => {
                 projetos={projetos}
               />
             ) : null}
-            <button onClick={() => navigate("/work")}>Ver todos</button>
+            <div className="container-button">
+              <button onClick={() => navigate("/work")}>Ver todos</button>
+            </div>
           </section>
         </Main>
         <Footer />
