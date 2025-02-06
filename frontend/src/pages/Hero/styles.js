@@ -77,6 +77,22 @@ export const Main = styled.main`
       props.theme === "light" ? Themes.black : Themes.white};
   }
 
+  .projetos button {
+    background-color: transparent;
+    color: ${(props) => (props.theme === "light" ? "black" : "white")};
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    border: 1px solid
+      ${(props) =>
+        props.theme === "light" ? Themes.lightGray : Themes.lightBlack};
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   @media screen and (min-width: 1600px) {
     .presentation h1 {
       font-size: 4em;

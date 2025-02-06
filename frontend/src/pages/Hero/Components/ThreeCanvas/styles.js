@@ -12,5 +12,10 @@ export const ContainerCanvas = styled.div`
   pointer-events: none;
   z-index: 1;
   transition: 0.2s;
-  margin-top: ${(props) => (props.tela < 920 ? "210px" : "0")};
+  margin-top: ${(props) =>
+    props.tela < 920 && props.tela > 480
+      ? "110px"
+      : props.tela <= 480
+      ? "210px"
+      : ""};
 `;

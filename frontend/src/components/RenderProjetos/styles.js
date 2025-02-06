@@ -11,6 +11,12 @@ export const ContainerProjetos = styled.div`
   margin-top: 150px;
   z-index: 5;
 
+  > p {
+    color: ${(props) =>
+      props.theme === "light" ? Themes.black : Themes.white};
+    margin: 20px 0;
+  }
+
   .projeto {
     width: 100%;
     height: auto;

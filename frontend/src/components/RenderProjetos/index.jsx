@@ -96,33 +96,40 @@ const RenderProjetos = ({ theme, onSetValueMouse, projetos }) => {
 
   return (
     <ContainerProjetos theme={theme} ref={containerProjetoRef} tela={tela}>
-      {projetos.map((projeto, index) => (
-        <div
-          onMouseEnter={() => houverProject(projeto)}
-          ref={(el) => (projetosRef.current[index] = el)}
-          key={index}
-          className="projeto"
-          onClick={() => navigateViewProject(projeto)}
-        >
-          {tela > 1000 ? (
-            <p>
-              {projeto.nome}{" "}
-              {mouseEnterProject === projeto.imagemCapa ? (
-                <span className="material-symbols-outlined">north_east</span>
-              ) : (
-                ""
-              )}
-            </p>
-          ) : (
-            <>
-              <img src={projeto.imagemCapa} />
-              <span>
-                {projeto.nome} - {projeto.termino}
-              </span>
-            </>
-          )}
-        </div>
-      ))}
+      {projetos.lenght > 0 ? (
+        projetos.map((projeto, index) => (
+          <div
+            onMouseEnter={() => houverProject(projeto)}
+            ref={(el) => (projetosRef.current[index] = el)}
+            key={index}
+            className="projeto"
+            onClick={() => navigateViewProject(projeto)}
+          >
+            {tela > 1000 ? (
+              <p>
+                {projeto.nome}{" "}
+                {mouseEnterProject === projeto.imagemCapa ? (
+                  <span className="material-symbols-outlined">north_east</span>
+                ) : (
+                  ""
+                )}
+              </p>
+            ) : (
+              <>
+                <img src={projeto.imagemCapa} />
+                <span>
+                  {projeto.nome} - {projeto.termino}
+                </span>
+              </>
+            )}
+          </div>
+        ))
+      ) : (
+        <p>
+          Não foi possível renderizar os projetos. Por favor, reinicie o site e
+          verifique sua conexão.
+        </p>
+      )}
 
       {tela > 1000 && (
         <FixedImage ref={fixedImageRef}>

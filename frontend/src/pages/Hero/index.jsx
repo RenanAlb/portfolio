@@ -99,6 +99,7 @@ const Hero = () => {
                 projetos={projetos}
               />
             ) : null}
+            <button onClick={() => navigate("/work")}>Ver todos</button>
           </section>
         </Main>
         <Footer />
