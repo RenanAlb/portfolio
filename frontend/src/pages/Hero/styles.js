@@ -62,6 +62,7 @@ export const Main = styled.main`
     width: 350px;
     color: ${(props) =>
       props.theme === "light" ? Themes.black : Themes.white};
+    line-height: 1.5em;
   }
 
   .projetos {
@@ -104,6 +105,12 @@ export const Main = styled.main`
   @media screen and (max-width: 520px) {
     .projetos h1 {
       font-size: 2em;
+    }
+  }
+
+  @media screen and (max-width: 5000px) {
+    .projetos h1 {
+      font-size: 1.8em;
     }
   }
 `;

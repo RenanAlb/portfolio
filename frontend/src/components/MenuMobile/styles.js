@@ -47,9 +47,6 @@ export const ContainerMenuMobile = styled.div`
     transition: 0.2s;
     margin: 12px 0;
     &:hover {
-      border-bottom: 1px solid
-        ${(props) =>
-          props.theme === "light" ? Themes.lightGray : Themes.lightBlack};
       cursor: pointer;
       transition: 0.2s;
     }

@@ -211,7 +211,7 @@ export const Main = styled.main`
     }
     .header-about-project .model > div p {
       font-size: 1.5em;
-      line-height: 1.4em;
+      line-height: 1.6em;
     }
   }
 
